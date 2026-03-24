@@ -15,7 +15,7 @@ import {
   HeartPulse,
   ChevronLeft
 } from 'lucide-react';
-import {  AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const services = [
   {
@@ -140,6 +140,12 @@ function App() {
 
       {/* Hero Section */}
       <header id="home" className="hero">
+        {/* Large Demo Watermark */}
+        <div className="hero-watermark">
+          محمود العقاد
+          <span>+970599923041</span>
+        </div>
+        
         <div className="container grid md-grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
@@ -428,10 +434,19 @@ function App() {
           </div>
           
           <div className="footer-bottom">
-            全 {new Date().getFullYear()} عيادات دالي لطب الأسنان. جميع الحقوق محفوظة.
+            <div>全 {new Date().getFullYear()} عيادات دالي لطب الأسنان. جميع الحقوق محفوظة.</div>
+            <div style={{marginTop: '0.5rem', fontSize: '0.7rem', opacity: 0.5}}>
+              تم انشاء الموقع بواسطة محمود العقاد | +970599923041
+            </div>
           </div>
         </div>
       </footer>
+
+      {/* Floating Watermark */}
+      <div className="watermark-fixed">
+        <span className="watermark-text">تم انشاء الموقع بوساطة محمود العقاد</span>
+        <span className="watermark-phone en">+970599923041</span>
+      </div>
     </div>
   );
 }
