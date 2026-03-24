@@ -140,10 +140,11 @@ function App() {
 
       {/* Hero Section */}
       <header id="home" className="hero">
-        {/* Large Demo Watermark */}
+        {/* Large Demo Watermark Overlay */}
         <div className="hero-watermark">
-          محمود العقاد
-          <span>+970599923041</span>
+          <div className="demo-label">نسخة تجريبية</div>
+          <span>للعرض فقط - غير مخصصة للبيع بدون ترخيص</span>
+          <span>بواسطة محمود العقاد | +970599923041</span>
         </div>
         
         <div className="container grid md-grid-cols-2 gap-12 items-center">
@@ -442,11 +443,7 @@ function App() {
         </div>
       </footer>
 
-      {/* Floating Watermark */}
-      <div className="watermark-fixed">
-        <span className="watermark-text">تم انشاء الموقع بوساطة محمود العقاد</span>
-        <span className="watermark-phone en">+970599923041</span>
-      </div>
+
     </div>
   );
 }
