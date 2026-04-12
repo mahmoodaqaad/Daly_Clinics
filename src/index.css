@@ -326,81 +326,9 @@ footer {
   opacity: 0.6;
 }
 
-.watermark-fixed {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--glass);
-  backdrop-filter: blur(8px);
-  padding: 0.75rem 1.25rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  border: 1px solid rgba(0,0,0,0.05);
-  font-size: 0.75rem;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  pointer-events: none;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-
-.watermark-fixed:hover {
-  opacity: 1;
-}
-
-.watermark-text {
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.watermark-phone {
-  font-family: 'Outfit', sans-serif;
-  color: var(--cta);
-  letter-spacing: 1px;
-}
-
-.hero-watermark {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-20deg);
-  font-size: 4rem;
-  font-weight: 900;
-  color: rgba(13, 59, 102, 0.06);
-  pointer-events: none;
-  white-space: nowrap;
-  z-index: 10;
-  user-select: none;
-  border: 15px solid rgba(13, 59, 102, 0.05);
-  padding: 2rem 4rem;
-  border-radius: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  line-height: 1;
-}
-
-.hero-watermark .demo-label {
-  font-size: 6rem;
-  letter-spacing: 5px;
-  color: rgba(238, 108, 77, 0.1); /* Slight reddish tint for 'Demo' */
-}
-
-.hero-watermark span {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 /* Responsive Overrides */
 @media (max-width: 768px) {
   .hero-title { font-size: 2.5rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .emergency-banner { padding: 2rem; border-radius: 1.5rem; }
-  .watermark-fixed { bottom: 1rem; right: 1rem; padding: 0.5rem 0.75rem; font-size: 0.65rem; }
-  .hero-watermark { font-size: 2.5rem; padding: 0.5rem 1.5rem; border-width: 5px; }
-  .hero-watermark span { font-size: 1rem; }
 }
